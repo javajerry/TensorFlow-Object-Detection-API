@@ -24,4 +24,5 @@ RUN sudo pip install matplotlib
 
 RUN mkdir /capstone
 VOLUME ["/capstone"]
+VOLUME ["/root/.ros/log/"]
 WORKDIR /capstone
