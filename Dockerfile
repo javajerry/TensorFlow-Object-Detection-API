@@ -21,3 +21,7 @@ RUN sudo pip install matplotlib
 RUN sudo pip install lxml
 RUN sudo pip install jupyter
 RUN sudo pip install matplotlib
+
+RUN mkdir /capstone
+VOLUME ["/capstone"]
+WORKDIR /capstone
