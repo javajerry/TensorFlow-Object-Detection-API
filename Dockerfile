@@ -9,3 +9,12 @@ RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/
   apt-get install -y \
     python-pip \
     ros-kinetic-ros-base
+RUN apt-get install sudo
+# For CPU
+RUN pip install tensorflow
+RUN sudo apt-get install protobuf-compiler python-pil python-lxml
+RUN sudo pip install jupyter
+RUN sudo pip install matplotlib
+RUN sudo pip install lxml
+RUN sudo pip install jupyter
+RUN sudo pip install matplotlib
