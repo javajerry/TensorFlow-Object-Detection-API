@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 
 # For CPU
 RUN pip install tensorflow
-RUN sudo apt-get install protobuf-compiler python-pil python-lxml
+RUN sudo apt-get -y install protobuf-compiler python-pil python-lxml
 RUN sudo pip install jupyter
 RUN sudo pip install matplotlib
 RUN sudo pip install lxml
