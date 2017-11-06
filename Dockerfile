@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 # For CPU
 RUN pip install tensorflow
 RUN sudo apt-get -y install protobuf-compiler python-pil python-lxml
+RUN sudo apt-get -y install python-tk 
 RUN sudo pip install IPython==5.0 
 RUN sudo pip install jupyter
 RUN sudo pip install matplotlib
@@ -24,5 +25,4 @@ RUN sudo pip install matplotlib
 
 RUN mkdir /capstone
 VOLUME ["/capstone"]
-VOLUME ["/root/.ros/log/"]
-WORKDIR /capstone
+WORKDIR /capstone/models/research
