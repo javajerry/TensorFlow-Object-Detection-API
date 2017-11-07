@@ -1,2 +1,2 @@
 # TensorFlow-Object-Detection-API
-Sample Project
+Created Docker image to run TensorFlow Object Detection API in Ubuntu and port forwarding jupyter notebook
